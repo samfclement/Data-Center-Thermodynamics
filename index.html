@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Thermal Energy Journey</title>
-    <meta name="description" content="Interactive cutaway showing how thermal energy travels from data center servers through AHUs, glycol, refrigeration and a cooling tower into the atmosphere." />
+    <title>Data Center Thermodynamics</title>
+    <meta name="description" content="Data Center Thermodynamics: an interactive cutaway showing how thermal energy travels from data center servers through AHUs, glycol, refrigeration and a cooling tower into the atmosphere." />
+    <meta name="application-name" content="Data Center Thermodynamics" />
+    <meta property="og:title" content="Data Center Thermodynamics" />
+    <meta property="og:description" content="Follow thermal energy from a server chip, through air, glycol, refrigerant and condenser water, out of a cooling tower and into the atmosphere." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samfclement.github.io/Data-Center-Thermodynamics/" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23ffb547' opacity='.35'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23fffdf2'/%3E%3C/svg%3E" />
     <style>
 /* ==========================================================================
-   Thermal Energy Journey — interface styles
+   Data Center Thermodynamics — interface styles
    UI colour tokens live in :root. Simulation colours (fluids, packet, metals)
    live in src/config/theme.js.
    ========================================================================== */
@@ -4731,7 +4736,7 @@ function buildLayout(root) {
   const topbar = h('header', { class: 'topbar' }, [
     h('div', { class: 'brand' }, [
       h('span', { class: 'brand-mark', 'aria-hidden': 'true' }),
-      h('div', {}, [h('h1', {}, 'Thermal Energy Journey'), h('p', {}, 'Data center cooling — from server chip to atmosphere')]),
+      h('div', {}, [h('h1', {}, 'Data Center Thermodynamics'), h('p', {}, 'Data center cooling — from server chip to atmosphere')]),
     ]),
     h('div', { class: 'tb-controls' }, [
       h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Learning mode' }, [modeAuto, modeManual]),
